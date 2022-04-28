@@ -1,0 +1,13 @@
+#!/bin/sh
+ran="$(${RPATH:-$PWD/ran/ran} $3)"
+# generate starting number using psh-prng
+# $3 can be custom seed
+mul="$((($2+1)-$1))"
+# $max - $min
+# +1 allows for $max to be present
+range="$(${MPATH:-$PWD/math/multiplication/mul} $mul $ran)"
+# ($max - $min) * $ran
+r1="$(($1+ ${range%.*} ))"; range="${r1}.${range#*.}"
+# add $min/reform
+echo "${range%.*}"
+# print

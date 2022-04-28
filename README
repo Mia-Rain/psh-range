@@ -1,0 +1,11 @@
+---
+psh-range
+-- library to generate random numbers
+-- in a range with few lines of code
+---
+Usage
+-- ./range $min $max
+-- eg: ./range 1 10
+-- <= $max
+-- >= $min
+---
