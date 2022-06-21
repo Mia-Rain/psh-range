@@ -1,7 +1,7 @@
 [submodule "ran"]
 	path = ran
 	url = git@dicksdeathabove.xyz:~mia/psh-prng
-	branch = master
+	branch = xor
 [submodule "math"]
 	path = math
 	url = git@dicksdeathabove.xyz:~mia/psh-fractional
